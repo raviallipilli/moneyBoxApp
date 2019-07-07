@@ -6,21 +6,12 @@ The solution contains a .NET core library (Moneybox.App) which is structured int
 * Features - this contains two operations, one which is implemented (transfer money) and another which isn't (withdraw money)
 * DataAccess - this contains a repository for retrieving and saving an account (and the nested user it belongs to)
 
-## The task
 
-The task is to implement a money withdrawal in the WithdrawMoney.Execute(...) method in the features folder. For consistency, the logic should be the same as the TransferMoney.Execute(...) method i.e. notifications for low funds and exceptions where the operation is not possible. 
+## Solution and Results 
 
-As part of this process however, you should look to refactor some of the code in the TransferMoney.Execute(...) method into the domain models, and make these models less susceptible to misuse. We're looking to make our domain models rich in behaviour and much more than just plain old objects, however we don't want any data persistance operations (i.e. data access repositories) to bleed into our domain. This should simplify the task of implementing WithdrawMoney.Execute(...).
+-> I spent just about a day and half , understanding the task itself took me some time.
+-> Used github to upload my project.
+-> Solution will compile and run any time.
+-> No refactoring has been made to service and account repository.
+-> Used Nunit test for testing the methods, they are written slightly in a longer way but can be done in even better and simple way, the reason being I had problem with converion of decimal to double as well as Guid to string so written seperate code for test methods.
 
-## Guidelines
-
-* You should spend no more than 1 hour on this task, although there is no time limit
-* You should fork or copy this repository into your own public repository (Github, BitBucket etc.) before you do your work
-* Your solution must compile and run first time
-* You should not alter the notification service or the the account repository interfaces
-* You may add unit/integration tests using a test framework (and/or mocking framework) of your choice
-* You may edit this README.md if you want to give more details around your work (e.g. why you have done something a particular way, or anything else you would look to do but didn't have time)
-
-Once you have completed your work, send us a link to your public repository.
-
-Good luck!
