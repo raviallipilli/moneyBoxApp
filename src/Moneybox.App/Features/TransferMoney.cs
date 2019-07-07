@@ -13,7 +13,6 @@ namespace Moneybox.App.Features
         {
             this.accountRepository = accountRepository;
             this.notificationService = notificationService;
-
         }
 
         public void Execute(Guid fromAccountId, Guid toAccountId, decimal amount)
